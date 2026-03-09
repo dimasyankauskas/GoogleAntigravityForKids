@@ -95,6 +95,8 @@ git clone https://github.com/dimasyankauskas/GoogleAntigravityForKids.git
 
 On first launch, the AI asks her name and what kind of apps she likes. From then on, it remembers.
 
+> 📖 **Want the full walkthrough?** See [**SETUP.md**](SETUP.md) — detailed installation, how it works under the hood, troubleshooting, and FAQ.
+
 ---
 
 ## What She Can Build
