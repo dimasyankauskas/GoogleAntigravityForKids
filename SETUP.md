@@ -37,14 +37,25 @@ git clone https://github.com/dimasyankauskas/GoogleAntigravityForKids.git
 
 Or click the green **Code** button on GitHub → **Download ZIP**, then unzip it.
 
-### Step 2: Open in Google Antigravity
+### Step 2: Get a Free Gemini API Key
+
+Kids can use their Google account to get an API key:
+
+1. Go to [Google AI Studio](https://aistudio.google.com/)
+2. Sign in with a Google account
+3. Click **Get API key** on the left menu
+4. Click **Create API key**
+5. Copy the long string of letters and numbers
+
+### Step 3: Open in Google Antigravity
 
 1. Launch Google Antigravity
 2. Go to **File → Open Folder**
 3. Select the `GoogleAntigravityForKids` folder
-4. Wait a moment for the AI to initialize
+4. Paste the API key when prompted by Antigravity's setup (or set `GEMINI_API_KEY` in settings)
+5. Wait a moment for the AI to initialize
 
-### Step 3: Prepare the workspace
+### Step 4: Prepare the workspace
 
 The terminal panel at the bottom shows build output. Your kid doesn't need to see it:
 
