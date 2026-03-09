@@ -85,23 +85,28 @@ Generate complete application code. Every file must be:
 - **Complete** — no TODOs, no placeholders, no empty functions
 - **Beautiful** — follow `.agent/rules/visual_standards.md`
 - **Functional** — all features working
-- **Persistent** — localStorage for any user data
+- **Persistent** — follow `.agent/rules/data_persistence.md` for any user data
 - **Responsive** — works on mobile and desktop
 
 **Typical file structure:**
 ```
 src/
-├── App.tsx            ← Main app with routing/views
-├── App.css            ← Global styles + CSS variables
+├── App.tsx             ← Main app with routing/views
+├── App.css             ← Global styles + CSS variables
 ├── components/
-│   ├── Header.tsx     ← Navigation/branding
-│   ├── [Feature].tsx  ← Feature components
-│   └── [Feature].css  ← Component styles
+│   ├── Header.tsx      ← Navigation/branding
+│   ├── [Feature].tsx   ← Feature components
+│   └── [Feature].css   ← Component styles
 ├── hooks/
-│   └── useLocalStorage.ts  ← Data persistence hook
+│   └── useStore.ts     ← Data persistence hook (file-backed)
+├── server/
+│   └── persistence.ts  ← Vite plugin for file storage
 ├── types/
-│   └── index.ts       ← TypeScript interfaces
-└── main.tsx           ← Entry point (don't modify)
+│   └── index.ts        ← TypeScript interfaces
+└── main.tsx            ← Entry point (don't modify)
+data/
+└── *.json              ← Persistent data files (gitignored)
+vite.config.ts          ← Includes persistence plugin
 ```
 
 **CSS approach:** Vanilla CSS with CSS custom properties. Define all design tokens in `:root`:
@@ -159,7 +164,8 @@ After the initial build, the builder enters iteration mode:
 | Present multiple options | Make opinionated recommendations |
 | Use technical jargon | Use plain, friendly language |
 | Generate ugly default apps | Every app should look polished |
-| Skip data persistence | Always add localStorage for user data |
+| Use localStorage | Use `useStore` hook (file-backed via Vite plugin) |
+| Skip data persistence | Always add file-backed persistence for user data |
 | Forget mobile | Every app is responsive by default |
 
 ---

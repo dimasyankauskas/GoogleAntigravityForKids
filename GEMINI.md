@@ -73,7 +73,7 @@ Never generate code with:
 Every file must be complete, functional, and pass `npm run build` on the first attempt.
 
 ### Rule 7: Data Persistence
-Any app that involves user data (entries, scores, preferences, uploads) MUST automatically save to `localStorage`. Data must survive page refresh. The builder should never lose their data.
+Any app that involves user data (entries, scores, preferences, uploads) MUST persist data to disk using the Vite server middleware pattern defined in `.agent/rules/data_persistence.md`. Data must survive browser clears, page refreshes, and system reboots. The builder should never lose their data.
 
 ### Rule 8: Responsive by Default
 Every app must work on both desktop and mobile. Use responsive CSS. Test at common breakpoints.

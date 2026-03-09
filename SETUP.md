@@ -87,7 +87,8 @@ Your kid sees none of these steps. They just see the app appear in their browser
 | **TypeScript** | Type-safe JavaScript — fewer bugs | No |
 | **Vite** | Fast build tool — apps start in seconds | No |
 | **Vanilla CSS** | Real styling, no framework dependency | No |
-| **localStorage** | Browser storage — data survives page refresh | No |
+| **localStorage** | Browser storage — fast reads for UI state | No |
+| **JSON file storage** | Persistent disk storage — survives everything | No |
 
 All of this is invisible. The AI makes every technical decision.
 
@@ -125,8 +126,8 @@ If the code doesn't compile, the AI fixes it automatically. Your kid never sees 
 ### It remembers preferences
 The first time your kid uses it, the AI saves their name, interests, and visual style preference to a file called `.builder-profile.json`. Every future session uses these settings.
 
-### It saves data
-Any app that involves user input (journal entries, scores, settings) automatically saves to the browser's localStorage. Data survives page refresh.
+### It saves data to disk
+Any app that involves user input (journal entries, scores, settings) automatically saves to JSON files in the project's `data/` directory. Data survives browser clears, page refreshes, and system reboots. It's a plain file your kid can even open and look at.
 
 ---
 
@@ -148,9 +149,9 @@ The AI personas are configured by the `GEMINI.md` file. Make sure this file exis
 
 ### My kid lost their data
 
-Data is stored in the browser's localStorage. It persists across page refreshes but can be lost if:
-- Browser data/cookies are cleared
-- A different browser is used
+Data is stored in JSON files inside the project's `data/` folder. It survives browser clears and restarts. Data can only be lost if:
+- The `data/` folder is manually deleted
+- The entire project is deleted
 - The app is rebuilt from scratch (the AI will warn before doing this)
 
 ### The AI generated an ugly app

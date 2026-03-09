@@ -67,7 +67,7 @@ No terminal. No commands. No error messages. The AI makes every technical decisi
 - 🧠 **Smart Interview** — The AI asks questions to understand the idea before building. Or say "just build it" to skip.
 - 🚀 **Auto-Launch** — App starts automatically in the browser. Zero setup.
 - 🔇 **Error Invisibility** — If something breaks, the AI fixes it without saying a word.
-- 💾 **Data Persists** — Everything saves locally. Refresh the page, data's still there.
+- 💾 **Data Persists Forever** — Saved to files on her computer. Survives browser clears, page refreshes, and reboots.
 - 🧑‍💻 **Real Code** — Not a black box. When she's ready, she can look at the code and learn.
 - 🔄 **Conversation Refinement** — "Make the header bigger." "Add a settings page." "Change it to purple." The AI just does it.
 
