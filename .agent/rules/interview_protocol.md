@@ -41,7 +41,7 @@ If the builder says ANY of these at ANY point, immediately stop asking questions
 When skipping, use smart defaults:
 - Vibe: colorful
 - Audience: personal use
-- Data: yes (localStorage)
+- Data: yes (file-backed)
 - Features: best interpretation of what they described
 
 ## Idea Suggestions

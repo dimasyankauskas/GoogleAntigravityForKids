@@ -62,7 +62,7 @@ npm install
 Follow Phase 3 (Generate) of the `young-builder` skill:
 - Generate all application files (components, styles, hooks, types)
 - Follow visual standards from `.agent/rules/visual_standards.md`
-- Include localStorage persistence for user data
+- Include file-backed persistence following `.agent/rules/data_persistence.md`
 - Every file must be complete — no TODOs
 
 ## Step 6: Verify the Build
