@@ -1,194 +1,178 @@
 # Google Antigravity for Kids
 
-> Turn ideas into real, working apps — no coding required.
+### Vibe coding for young builders. Free. Local. No limits.
 
-**Google Antigravity for Kids** transforms [Google Antigravity IDE](https://antigravity.google) into a kid-friendly app builder. Open this project, describe what you want to build, and watch it come to life in your browser.
+> I built this for my daughter. She's 15, into science, and was using Lovable to build apps for her research projects. It worked — until she hit the credit wall. Then the lock-in. Then the "AI doom loop" where the agent breaks its own code and burns tokens fixing it.
+>
+> She came home from a Girls in Technology camp full of ideas. I handed her Google Antigravity and realized: this thing is *way* more powerful than Lovable — but it talks like a software architect, not a creative partner.
+>
+> So I fixed that.
+>
+> This project turns Antigravity into a kid-friendly app builder. She describes what she wants, the AI asks a few smart questions, and a polished app shows up in her browser. No credits. No subscriptions. No ceiling. The code lives on her laptop and she owns it forever.
+>
+> Now I'm sharing it so your kids can have the same thing.
 
 ---
 
-## What Is This?
+## What It Does
 
-This is a **project template** for Google Antigravity that makes the AI agent behave as a creative building partner instead of a software engineering tool. It's designed for kids (ages 10+) who want to build apps but don't know how to code.
-
-**What the builder does:** Types what they want in plain English.
-**What the agent does:** Asks smart questions, builds the entire app, launches it automatically.
-
-### How It Works
+Your kid types what they want to build. The AI builds it. That's it.
 
 ```
-You: "I want to build a mood tracker"
+Kid:      "I want to build a mood tracker"
 
-Builder: "Nice — a mood tracker. A few questions:
-         1. Should it track with colors, emojis, or text?
-         2. Pick a vibe: colorful / minimal / dark / retro / playful
-         3. Any other features?"
+Builder:  "Nice — a mood tracker. Quick questions:
+           1. Track with colors, emojis, or text?
+           2. Pick a vibe: colorful / minimal / dark / retro / playful
+           3. Anything else?"
 
-You: "emojis and dark"
+Kid:      "emojis and dark"
 
-Builder: "Got it — building a dark-themed mood tracker with emoji selection.
-         Building now..."
+Builder:  "Got it — dark theme, emoji picker, saves everything locally.
+           Building now..."
 
-[App appears in your browser in ~2 minutes]
+          [App appears in browser in ~2 minutes]
 
-Builder: "Your app is running — check your browser! Want to change anything?"
+Builder:  "Your app is running — check your browser! Want to change anything?"
 ```
+
+No terminal. No commands. No error messages. The AI makes every technical decision and fixes every problem silently.
+
+---
+
+## Why This Exists
+
+**The problem:** AI app builders like Lovable and Bolt are incredible — but they charge per message, lock code in the cloud, and cap creativity with credit limits. A kid who runs out of credits mid-project loses momentum. A kid who can't export her code doesn't truly own what she built.
+
+**What changes here:** Google Antigravity is free, runs locally, and generates real code your kid can see, keep, and learn from. This project adds the missing piece — it makes Antigravity *talk like a friend*, not an engineer.
+
+| | Lovable / Bolt | This Project |
+|---|---|---|
+| **Cost** | $20-100/mo, credit-based | **Free. Forever.** |
+| **Code** | Cloud-locked, export to GitHub | **Lives on her computer. She owns it.** |
+| **Errors** | AI debugging visible, anxiety-inducing | **Fixed silently. She never sees them.** |
+| **Limits** | Credit wall mid-project | **No limits. No walls.** |
+| **Learning** | Code is hidden | **Code is visible when she's curious** |
+| **Memory** | Forgets everything between sessions | **Remembers her name, style, and projects** |
 
 ---
 
 ## Features
 
-| Feature | Description |
-|---|---|
-| **Guided Interview** | Agent asks smart questions to understand what you want before building |
-| **Just Build It** | Say "just build it" at any point to skip questions and get instant results |
-| **Auto-Launch** | App starts automatically — no terminal commands, no setup |
-| **Error Invisibility** | If something breaks, the agent fixes it silently |
-| **Beautiful Design** | Every app looks polished with 5 visual styles to choose from |
-| **Data Persistence** | Your data survives page refresh — nothing gets lost |
-| **Session Memory** | The agent remembers your name, preferences, and past projects |
-| **Free** | No credits, no limits, no subscription |
-| **Code Ownership** | All code lives on your computer — you own it forever |
+- 🎨 **5 Visual Styles** — Colorful, minimal, dark, retro, playful. Every app looks polished.
+- 🧠 **Smart Interview** — The AI asks questions to understand the idea before building. Or say "just build it" to skip.
+- 🚀 **Auto-Launch** — App starts automatically in the browser. Zero setup.
+- 🔇 **Error Invisibility** — If something breaks, the AI fixes it without saying a word.
+- 💾 **Data Persists** — Everything saves locally. Refresh the page, data's still there.
+- 🧑‍💻 **Real Code** — Not a black box. When she's ready, she can look at the code and learn.
+- 🔄 **Conversation Refinement** — "Make the header bigger." "Add a settings page." "Change it to purple." The AI just does it.
 
 ---
 
 ## Quick Start
 
-### Prerequisites
+### What You Need
 
-- [Google Antigravity IDE](https://antigravity.google) installed
-- [Node.js](https://nodejs.org/) 18+ installed
+- [Google Antigravity IDE](https://antigravity.google) (free)
+- [Node.js](https://nodejs.org/) 18+ (free)
 
-### Setup (One-Time, Done by Parent)
+### Setup (5 minutes, done by parent)
 
-1.  **Clone this repository:**
-    ```bash
-    git clone https://github.com/your-username/GoogleAntigravityForKids.git
-    ```
+```bash
+# 1. Clone this repo
+git clone https://github.com/dimasyankauskas/GoogleAntigravityForKids.git
 
-2.  **Open in Antigravity:**
-    - Launch Google Antigravity
-    - Open the `GoogleAntigravityForKids` folder as a workspace
+# 2. Open in Google Antigravity as a workspace
 
-3.  **Optional: Collapse the terminal panel**
-    - The terminal shows build output — it's not needed for the builder
-    - Click the terminal panel header to collapse it
+# 3. (Optional) Collapse the terminal panel — your kid doesn't need it
 
-4.  **Hand the laptop to the builder**
-    - On first launch, the agent asks their name and preferences
-    - Everything else is automatic
-
----
-
-## What Gets Built
-
-The agent generates complete web apps using:
-- **Vite** — fast build tool
-- **React** — UI framework
-- **TypeScript** — type-safe code
-- **Vanilla CSS** — no frameworks, real styling
-
-The builder never needs to know or care about any of this. Technology is invisible.
-
----
-
-## Vibe System
-
-When building, the agent asks "Pick a vibe" to set the visual style:
-
-| Vibe | Description |
-|---|---|
-| **Colorful** | Warm gradients, vibrant accents, energetic feel |
-| **Minimal** | Clean white space, single accent color, focused |
-| **Dark** | Deep charcoal backgrounds, neon accents, sleek |
-| **Retro** | Cream backgrounds, warm tones, nostalgic |
-| **Playful** | Soft pastels, rounded shapes, friendly |
-
----
-
-## Project Structure
-
-```
-GoogleAntigravityForKids/
-├── GEMINI.md                          ← Agent persona (creative partner)
-├── .gemini/settings.json              ← Auto-approval settings
-├── .geminiignore                      ← Keeps context clean
-├── .agent/
-│   ├── rules/
-│   │   ├── interview_protocol.md      ← How the agent asks questions
-│   │   ├── error_recovery.md          ← How errors are fixed silently
-│   │   ├── visual_standards.md        ← Design system and vibe presets
-│   │   ├── communication_style.md     ← Plain language rules
-│   │   └── onboarding_protocol.md     ← First-launch profile creation
-│   ├── skills/
-│   │   └── young-builder/
-│   │       └── SKILL.md               ← The building protocol
-│   └── workflows/
-│       └── build.md                   ← /build pipeline
-├── docs/                              ← Project documentation
-│   ├── master_strategy.md             ← Design decisions and architecture
-│   ├── research_report.md             ← Competitive analysis
-│   └── ...
-└── README.md                          ← This file
+# 4. Hand over the laptop
 ```
 
+On first launch, the AI asks her name and what kind of apps she likes. From then on, it remembers.
+
 ---
 
-## Commands
+## What She Can Build
 
-| Command | What It Does |
-|---|---|
-| `/build` | Start a new app from scratch (guided interview → auto-launch) |
-| Just type naturally | The agent understands plain English for modifications |
+Anything she can describe. Here are some ideas the AI can suggest:
+
+- 📊 **A data tracker for a science project** — log observations, chart results
+- 🎨 **A portfolio for her artwork** — upload, gallery view, dark theme
+- 📝 **A study planner** — subjects, deadlines, progress tracking
+- 🎮 **A trivia game** — custom questions, score tracking, share with friends
+- 🌤️ **A mood journal** — daily entries with emoji, color-coded calendar
+- 📱 **A personal dashboard** — weather, to-do list, motivational quotes
+
+She types the idea. The AI figures out the rest.
 
 ---
 
 ## For Parents
 
-### What This Project Does
+### What this project actually does:
 
-This project pre-configures Google Antigravity's AI agent to:
-- Speak in plain, friendly language (no jargon)
-- Make all technology decisions (framework, libraries, architecture)
-- Run all commands automatically (no terminal interaction needed)
-- Fix errors silently (your child never sees error messages)
-- Generate visually polished apps (not default template look)
-- Save data locally (using localStorage — no cloud, no accounts)
+It pre-configures Google Antigravity's AI to:
+- Speak in plain, friendly language — no jargon, no "npm install", no "TypeScript compiler"
+- Make every technology decision — she never picks a framework or library
+- Run everything automatically — no terminal interaction required
+- Fix errors silently — she never sees a stack trace or error message
+- Generate polished apps — not default-looking homework projects
+- Save data locally — using the browser's built-in storage, no cloud accounts
 
-### What It Does NOT Do
+### What it does NOT do:
 
-- It does NOT modify your global Antigravity settings
-- It does NOT require any accounts or subscriptions
-- It does NOT send data anywhere (everything is local)
-- It does NOT access the internet during builds (unless web search is needed for questions)
+- Does NOT touch your global Antigravity settings
+- Does NOT require paid accounts or subscriptions
+- Does NOT send data to the cloud (everything stays on her computer)
+- Does NOT auto-approve file deletion (safe by design)
 
 ### Safety
 
-- All code runs locally on your computer
-- No deployment to public internet (unless you explicitly set that up later)
-- No file deletion commands are auto-approved
-- The builder can't accidentally break your system
+All code runs locally. Nothing is deployed publicly unless you explicitly set that up later. She can't accidentally break your system.
+
+---
+
+## The Vision
+
+We're at a turning point. AI coding tools have made it possible for anyone — regardless of age or experience — to build real software by describing what they want.
+
+But most of these tools are walled gardens. They charge per message. They lock code in the cloud. They create dependency instead of capability.
+
+This project takes a different approach: **give kids the tools, let them own the results, and get out of the way.**
+
+When a 15-year-old builds a data visualization app for her biology research using an AI agent she controls locally — she's not just building an app. She's learning how to collaborate with AI. She's developing the intuition for what agents can and can't do. She's acquiring a skill that will define her generation.
+
+The gap between "can code" and "can't code" is disappearing. What remains is the gap between **people who know how to direct AI** and people who don't.
+
+This project is one small step toward closing that gap — starting with the kids who are most excited to build.
 
 ---
 
 ## Contributing
 
-This project is designed to grow with community feedback. Contributions welcome:
+This project grows with feedback. Pull requests welcome:
 
-- **New vibes** — Add visual style presets to `.agent/rules/visual_standards.md`
-- **Better interview questions** — Improve `.agent/rules/interview_protocol.md`
+- **New vibes** — Add visual styles to `.agent/rules/visual_standards.md`
+- **Better questions** — Improve the interview flow in `.agent/rules/interview_protocol.md`
 - **Bug fixes** — If the agent generates broken code, improve the skill protocol
-- **Documentation** — Help other parents set this up
+- **Documentation** — Help other parents discover and set this up
+- **Translations** — Make the communication style work in other languages
 
 ---
 
-## Credits
+## Built With
 
-Built with [Google Antigravity IDE](https://antigravity.google).
+[Google Antigravity IDE](https://antigravity.google) — the AI-native coding environment from Google.
 
-Inspired by the builder experience of [Lovable](https://lovable.dev), designed to go beyond it.
+Inspired by the magic of [Lovable](https://lovable.dev). Designed to go beyond it.
 
 ---
 
 ## License
 
-MIT — Use it, share it, remix it.
+MIT — Use it, fork it, share it, teach with it.
+
+---
+
+**Keywords:** vibe coding, AI app builder for kids, no-code for teens, Google Antigravity, STEM education, girls in technology, coding without coding, AI agent for kids, free Lovable alternative, local AI development, young builders, creative coding, AI pair programming for beginners
