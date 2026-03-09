@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Google Antigravity for Kids — Vibe coding for young builders" width="100%">
+  <img src="banner.jpg" alt="Google Antigravity for Kids — Vibe coding for young builders" width="100%">
 </p>
 
 # Google Antigravity for Kids
