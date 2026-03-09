@@ -173,11 +173,13 @@ This project grows with feedback. Pull requests welcome:
 
 Inspired by the magic of [Lovable](https://lovable.dev). Designed to go beyond it.
 
+Created by **Dimas Yankauskas** — because every kid deserves tools without limits.
+
 ---
 
 ## License
 
-MIT — Use it, fork it, share it, teach with it.
+MIT — Use it, fork it, share it, teach with it. See [LICENSE](LICENSE).
 
 ---
 
