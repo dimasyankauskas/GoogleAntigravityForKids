@@ -4,7 +4,7 @@
 
 # Google Antigravity for Kids
 
-### Vibe coding for young builders. Free. Local. No limits.
+### Vibe coding for young builders. Free*. Local. No limits.
 
 > I built this for my daughter. She's 15, into science, and was using Lovable to build apps for her research projects. It worked — until she hit the credit wall. Then the lock-in. Then the "AI doom loop" where the agent breaks its own code and burns tokens fixing it.
 >
@@ -48,16 +48,18 @@ No terminal. No commands. No error messages. The AI makes every technical decisi
 
 **The problem:** AI app builders like Lovable and Bolt are incredible — but they charge per message, lock code in the cloud, and cap creativity with credit limits. A kid who runs out of credits mid-project loses momentum. A kid who can't export her code doesn't truly own what she built.
 
-**What changes here:** Google Antigravity is free, runs locally, and generates real code your kid can see, keep, and learn from. This project adds the missing piece — it makes Antigravity *talk like a friend*, not an engineer.
+**What changes here:** Google Antigravity is free*, runs locally, and generates real code your kid can see, keep, and learn from. This project adds the missing piece — it makes Antigravity *talk like a friend*, not an engineer.
 
 | | Lovable / Bolt | This Project |
 |---|---|---|
-| **Cost** | $20-100/mo, credit-based | **Free. Forever.** |
+| **Cost** | $20-100/mo, credit-based | **Free*. Forever.** |
 | **Code** | Cloud-locked, export to GitHub | **Lives on her computer. She owns it.** |
 | **Errors** | AI debugging visible, anxiety-inducing | **Fixed silently. She never sees them.** |
 | **Limits** | Credit wall mid-project | **No limits. No walls.** |
 | **Learning** | Code is hidden | **Code is visible when she's curious** |
 | **Memory** | Forgets everything between sessions | **Remembers her name, style, and projects** |
+
+_\* Requires a valid Google (Gmail) account to access Google Antigravity, and a free Gemini API key from Google AI Studio._
 
 ---
 

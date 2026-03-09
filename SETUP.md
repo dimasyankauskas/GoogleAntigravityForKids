@@ -13,7 +13,9 @@ You'll need two things installed on the computer your kid will use:
 | **Google Antigravity IDE** | The AI-powered code editor | [antigravity.google](https://antigravity.google) |
 | **Node.js 18+** | JavaScript runtime (needed to run generated apps) | [nodejs.org](https://nodejs.org/) — download the LTS version |
 
-Both are free. Installation takes about 5 minutes total.
+Both are free*. Installation takes about 5 minutes total.
+
+_\* Requires a valid Google (Gmail) account to access Google Antigravity, and a free Gemini API key from Google AI Studio._
 
 ### Verify Node.js is installed
 
@@ -37,7 +39,7 @@ git clone https://github.com/dimasyankauskas/GoogleAntigravityForKids.git
 
 Or click the green **Code** button on GitHub → **Download ZIP**, then unzip it.
 
-### Step 2: Get a Free Gemini API Key
+### Step 2: Get a Free* Gemini API Key
 
 Kids can use their Google account to get an API key:
 
